@@ -198,7 +198,7 @@ export const JudgeDemoModal: React.FC<JudgeDemoModalProps> = ({
                 Hackathon Presentation Mode
               </div>
               <h2 className="text-base font-bold text-white">
-                Follow-The-Green Leaders: Complete Evaluation Demo
+                Clover: Complete Evaluation Demo
               </h2>
             </div>
           </div>

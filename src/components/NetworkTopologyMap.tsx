@@ -321,7 +321,7 @@ export const NetworkTopologyMap: React.FC<NetworkTopologyMapProps> = ({
         <div className="flex items-center gap-2">
           <Shield className="w-4 h-4 text-emerald-400 shrink-0" />
           <span>
-            Distributed Quorum: All 3 regions retain 100% data copies (RF=3). Follow-The-Green relocates write coordinator leaders without data migration risk.
+            Distributed Quorum: All 3 regions retain 100% data copies (RF=3). Clover relocates write coordinator leaders without data migration risk.
           </span>
         </div>
         <div className="flex items-center gap-2 font-mono text-[11px] text-zinc-400 bg-zinc-900/80 px-2.5 py-1 rounded border border-zinc-800">

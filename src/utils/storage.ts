@@ -2,8 +2,8 @@ import { MemoryRecord, SimulationState } from '../types';
 import { INITIAL_TABLETS } from './carbonData';
 
 const STORAGE_KEYS = {
-  SIMULATION: 'ftg_simulation_state_v1',
-  MEMORY: 'ftg_meko_memory_v1',
+  SIMULATION: 'clover_simulation_state_v1',
+  MEMORY: 'clover_meko_memory_v1',
 };
 
 // Seed realistic initial memories that demonstrate Meko's previous learnings
@@ -71,7 +71,7 @@ export const INITIAL_SIM_STATE: SimulationState = {
 
 export function loadSimulationState(): SimulationState {
   try {
-    const raw = localStorage.getItem(STORAGE_KEYS.SIMULATION);
+    const raw = localStorage.getItem(STORAGE_KEYS.SIMULATION) || localStorage.getItem('ftg_simulation_state_v1');
     if (!raw) return INITIAL_SIM_STATE;
     const parsed = JSON.parse(raw);
     return {
@@ -95,7 +95,7 @@ export function saveSimulationState(state: SimulationState): void {
 
 export function loadMemoryRecords(): MemoryRecord[] {
   try {
-    const raw = localStorage.getItem(STORAGE_KEYS.MEMORY);
+    const raw = localStorage.getItem(STORAGE_KEYS.MEMORY) || localStorage.getItem('ftg_meko_memory_v1');
     if (!raw) {
       localStorage.setItem(STORAGE_KEYS.MEMORY, JSON.stringify(SEED_MEMORIES));
       return SEED_MEMORIES;

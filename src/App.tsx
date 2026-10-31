@@ -254,7 +254,7 @@ export default function App() {
               </span>
             </div>
             <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight text-white">
-              FOLLOW-THE-GREEN LEADERS
+              CLOVER
             </h1>
             <p className="text-sm sm:text-base text-zinc-300 font-medium">
               Smarter Database Placement. Lower Carbon. Controlled Latency.
@@ -371,7 +371,7 @@ export default function App() {
       <footer className="border-t border-zinc-900 bg-[#030712] px-4 sm:px-6 lg:px-8 py-8 text-xs text-zinc-400">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
-            <span className="font-bold text-zinc-300">FOLLOW-THE-GREEN LEADERS</span>
+            <span className="font-bold text-zinc-300">CLOVER</span>
             <span>·</span>
             <span>AI Decision Assistant: MEKO</span>
             <span>·</span>

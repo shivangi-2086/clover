@@ -73,7 +73,7 @@ export const YugabyteClusterView: React.FC<YugabyteClusterViewProps> = ({
       <div className="p-4 bg-zinc-900/60 border border-zinc-800/80 rounded-xl text-xs space-y-2 text-zinc-300">
         <div className="flex items-center gap-2 font-bold text-white">
           <Info className="w-4 h-4 text-emerald-400" />
-          <span>Understanding YugabyteDB Preferred Leader Placement (Follow-The-Green):</span>
+          <span>Understanding YugabyteDB Preferred Leader Placement (Clover Engine):</span>
         </div>
         <p className="leading-relaxed">
           Tables in YugabyteDB are sharded into discrete <strong>Tablets</strong>. With Replication Factor <strong>RF=3</strong>, every tablet maintains 3 synchronous copies (one replica in Mumbai, one in Frankfurt, one in Virginia) with Raft consensus. Data is never moved across regions during optimization; instead, only the <strong>Active Leader</strong> role is transferred using YugabyteDB&apos;s <code className="text-emerald-400 font-mono bg-zinc-950 px-1.5 py-0.5 rounded border border-zinc-800">yb-admin set_preferred_leader_provider</code> policy, safely shifting write coordination compute to cleaner power grids.

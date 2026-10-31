@@ -38,7 +38,7 @@ export const TopNav: React.FC<TopNavProps> = ({
           </div>
           <div className="flex items-center gap-2">
             <span className="text-base font-extrabold tracking-tight text-white whitespace-nowrap">
-              FOLLOW-THE-GREEN LEADERS
+              CLOVER
             </span>
             <span className="text-[10px] font-mono font-bold text-emerald-400 border border-emerald-500/30 bg-emerald-950/50 px-2 py-0.5 rounded shadow-sm">
               MEKO AI
