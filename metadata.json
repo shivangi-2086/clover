@@ -1,0 +1,6 @@
+{
+  "name": "Follow-The-Green Leaders",
+  "description": "Smarter Database Placement. Lower Carbon. Controlled Latency. Intelligent carbon-aware leader optimizer for multi-region YugabyteDB clusters powered by Meko.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
